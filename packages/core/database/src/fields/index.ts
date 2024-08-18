@@ -38,6 +38,7 @@ import { NanoidFieldOptions } from './nanoid-field';
 import { EncryptionField } from './encryption-field';
 import { UnixTimestampFieldOptions } from './unix-timestamp-field';
 import { DateOnlyFieldOptions } from './date-only-field';
+import { SubqueryField } from './subquery-field';
 
 export * from './array-field';
 export * from './belongs-to-field';
@@ -65,6 +66,7 @@ export * from './virtual-field';
 export * from './nanoid-field';
 export * from './encryption-field';
 export * from './unix-timestamp-field';
+export * from './subquery-field';
 
 export type FieldOptions =
   | BaseFieldOptions
@@ -96,4 +98,5 @@ export type FieldOptions =
   | HasOneFieldOptions
   | HasManyFieldOptions
   | BelongsToManyFieldOptions
-  | EncryptionField;
+  | EncryptionField
+  | SubqueryField;
